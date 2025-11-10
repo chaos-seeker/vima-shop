@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import { iranSansX } from '@/constants/fonts';
 import './globals.css';
 
 export const metadata: Metadata = {
   title: 'ویما شاپ',
-  description: 'یک فروشگاه اینترنتی',
+  description: 'فروشگاه اینترنتی',
 };
 
 export default function RootLayout({
@@ -12,11 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-      >
-        {children}
-      </body>
+    <html lang="fa" dir="rtl" className={iranSansX.variable}>
+      <body className={iranSansX.className}>{children}</body>
     </html>
   );
 }

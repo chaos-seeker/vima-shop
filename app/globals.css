@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme inline {
   --transition-duration: 300ms;
@@ -6,6 +6,8 @@
   --text-xsp: 13px;
   --text-smp: 15px;
   --text-mdp: 17px;
+  --color-primary: #5f65fe;
+  --color-secondary: #fa7161;
 }
 
 @layer base {
@@ -16,7 +18,7 @@
     @apply my-4;
   }
   body {
-    @apply overflow-x-hidden text-gray-600;
+    @apply overflow-x-hidden text-white bg-[#f7f8fa];
   }
   p {
     @apply text-gray-700;
