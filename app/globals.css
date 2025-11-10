@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme inline {
+  --transition-duration: 300ms;
+  --color-border: #efefef;
+  --text-xsp: 13px;
+  --text-smp: 15px;
+  --text-mdp: 17px;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  main {
+    @apply my-4;
+  }
+  body {
+    @apply overflow-x-hidden text-gray-600;
+  }
+  p {
+    @apply text-gray-700;
+  }
+  input,
+  textarea {
+    @apply outline-none;
+  }
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  button {
+    @apply cursor-pointer;
+  }
+}
