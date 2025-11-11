@@ -1,5 +1,6 @@
 'use client';
 
+import { Footer } from '@/containers/layout/base/footer';
 import { Header } from '@/containers/layout/base/header';
 import { usePathname } from 'next/navigation';
 import { ReactNode } from 'react';
@@ -19,6 +20,7 @@ export default function LayoutBase(props: ILayoutProps) {
     <>
       <Header />
       <main>{props.children}</main>
+      <Footer />
     </>
   );
 }

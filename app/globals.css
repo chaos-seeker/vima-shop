@@ -17,10 +17,10 @@
     @apply border-gray-200;
   }
   main {
-    @apply my-4;
+    @apply my-4 flex-1 flex h-full;
   }
   body {
-    @apply overflow-x-hidden text-black bg-gray-50;
+    @apply overflow-x-hidden text-black bg-gray-50 min-h-screen flex flex-col;
   }
   p {
     @apply text-gray-700;
