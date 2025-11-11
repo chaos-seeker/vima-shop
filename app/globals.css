@@ -1,38 +1,26 @@
 @import 'tailwindcss';
 
 @theme inline {
-  --transition-duration: 300ms;
   --text-xsp: 13px;
   --text-smp: 15px;
   --text-mdp: 17px;
-  --color-primary: var(--color-primary);
-  --color-secondary: var(--color-secondary);
-  --color-bg: var(--color-bg);
-  --color-text: var(--color-text);
-}
-
-:root {
   --color-primary: #5f65fe;
   --color-secondary: #f8b4ad;
-  --color-bg: #f7f8fa;
-  --color-text: #000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-primary: #5f65fe;
-    --color-secondary: #fa7161;
-    --color-bg: #1a1a1a;
-    --color-text: #ffffff;
-  }
+@utility container {
+  @apply mx-auto max-w-7xl px-4;
 }
 
 @layer base {
+  * {
+    @apply border-gray-200;
+  }
   main {
     @apply my-4;
   }
   body {
-    @apply overflow-x-hidden text-text bg-bg/;
+    @apply overflow-x-hidden text-black bg-gray-50;
   }
   p {
     @apply text-gray-700;

@@ -1,5 +1,6 @@
 'use client';
 
+import { Header } from '@/containers/layout/base/header';
 import { usePathname } from 'next/navigation';
 import { ReactNode } from 'react';
 
@@ -16,7 +17,8 @@ export default function LayoutBase(props: ILayoutProps) {
 
   return (
     <>
-      <main className="flex flex-1 justify-center">{props.children}</main>
+      <Header />
+      <main>{props.children}</main>
     </>
   );
 }
